@@ -1,0 +1,27 @@
+{
+  "name": "kiosk_app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "lint": "eslint .",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.74.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native/babel-preset": "0.74.83",
+    "@react-native/eslint-config": "0.74.83",
+    "@react-native/metro-config": "0.74.83",
+    "@types/react": "^18.2.6",
+    "prettier": "2.8.8"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
