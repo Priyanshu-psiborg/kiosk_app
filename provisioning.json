@@ -1,0 +1,9 @@
+{
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.kiosk_app/.MyDeviceAdminReceiver",
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "HDToCPnYOeONh9xcPvq9gzeMESTSGZackKfLCG4mFWY=",
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://github.com/Priyanshu-psiborg/kiosk_app/releases/download/testing/app-release.apk",
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_CHECKSUM": "FkDCQbWBlcpOoBZCNPgov99M5zu5aHSE+tfzDPCaCUk=",
+  "android.app.extra.PROVISIONING_WIFI_SSID": "Letsconnect",
+  "android.app.extra.PROVISIONING_WIFI_PASSWORD": "Let$@136",
+  "android.app.extra.PROVISIONING_WIFI_SECURITY_TYPE": "WPA"
+}

@@ -7,6 +7,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.annotation.RequiresApi
+import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
@@ -37,9 +38,15 @@ class KioskModeModule(reactContext: ReactApplicationContext) : ReactContextBaseJ
     }
 
     @ReactMethod
-    fun isLockTaskPermitted(): Boolean {
-        return devicePolicyManager.isLockTaskPermitted(currentActivity?.packageName)
+    fun isLockTaskPermitted(promise: Promise) {
+        try {
+            val permitted = devicePolicyManager.isLockTaskPermitted(currentActivity?.packageName)
+            promise.resolve(permitted)
+        } catch (e: Exception) {
+            promise.reject("ERROR", "Failed to check lock task permission", e)
+        }
     }
+
 
     @RequiresApi(Build.VERSION_CODES.Q)
     @ReactMethod
